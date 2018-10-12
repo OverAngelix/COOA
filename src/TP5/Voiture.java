@@ -3,10 +3,25 @@ package TP5;
 public class Voiture {
 	private int immatriculation;
 	private Etat etatVoiture;
+	private Atelier atelierrepar;
 	
-	public Voiture(int im,Etat etat) {
+	public Voiture(int im) {
 		this.immatriculation=im;
-		this.etatVoiture=etat;
+		this.etatVoiture=Etat.Marche;
+	}
+
+	@Override
+	public String toString() {
+		return "Voiture [immatriculation=" + immatriculation + ", etatVoiture=" + etatVoiture + ", atelierrepar="
+				+ atelierrepar + "]";
+	}
+
+	public Atelier getAtelierrepar() {
+		return atelierrepar;
+	}
+
+	public void setAtelierrepar(Atelier atelierrepar) {
+		this.atelierrepar = atelierrepar;
 	}
 
 	public int getImmatriculation() {
