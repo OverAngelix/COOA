@@ -1,6 +1,6 @@
 package TP6;
 
-public abstract class Dessert {
+public abstract class Dessert implements UIvisit{
 	private String libelle;
 	private double prix;
 
@@ -29,6 +29,6 @@ public abstract class Dessert {
 		System.out.println(getLibelle()+ " au prix de "+ getPrix());
 	}
 	
-	
+	public abstract void accept(VisitorPrix plop);
 	
 }

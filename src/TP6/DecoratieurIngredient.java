@@ -10,5 +10,11 @@ public abstract class DecoratieurIngredient {
 	public double getPrix() {
 		return dessert.getPrix();
 	}
+
+	@Override
+	public String toString() {
+		return dessert.getLibelle() +" au prix de "+ dessert.getPrix();
+	}
+	
 	
 }

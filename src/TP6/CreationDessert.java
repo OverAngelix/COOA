@@ -1,7 +1,6 @@
 package TP6;
 
 public class CreationDessert {
-
 	Dessert getDessert(String typeDessert) throws ExceptionCreation{
 		switch(typeDessert) {
 			case "Gaufre":
@@ -10,6 +9,7 @@ public class CreationDessert {
 				return new Crepe();
 			default:
 				throw new ExceptionCreation("TYPE INCONNU "+typeDessert);
-		}		
+		}
+
 	}
 }

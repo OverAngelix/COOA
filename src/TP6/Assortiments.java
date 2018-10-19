@@ -25,6 +25,8 @@ public class Assortiments extends Dessert{
 		for(Dessert d : assortiments) {
 			pt+=d.getPrix();
 		}
+		pt=pt-pt*0.1;
+		
 		return pt;
 	}
 }
