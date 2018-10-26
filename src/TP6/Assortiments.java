@@ -29,4 +29,10 @@ public class Assortiments extends Dessert{
 		
 		return pt;
 	}
+
+	@Override
+	public void accept(VisitorPrix plop) {
+		// TODO Auto-generated method stub
+		
+	}
 }
